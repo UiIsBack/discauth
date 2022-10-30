@@ -35,12 +35,18 @@ def login():
 @app.route('/callback')
 def callback():
   code = request.args.get('code')
-  token = code_to_token(client_id, client_secret, redirect, code)
+  token = code_to_token(config['client_id'], config['client_secret'], config['redirect'], config['code'])
   session['token'] = str(token)
   return redirect('http://localhost:5000')
  
  @app.route('/logout')
  def logout():
   session.clear()
-  return redirect('/')```
+  return redirect('/')
+  ```
   
+  *Dragging a user to a guild*
+  ```py
+  from discauth import *
+  
+  cc
