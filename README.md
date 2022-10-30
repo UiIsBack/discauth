@@ -1,10 +1,11 @@
 # discauth
-##setup
+**setup**
 
 *installation*
 ```pip install discauth```
 
-##basic usage
+**Basic usage**
+
 *flask login system returns username*
 
 ```py
