@@ -1,5 +1,4 @@
 import requests
-import json
 API_ENDPOINT = "https://discord.com/api/v8"
 def code_to_token(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, code):
     data = {
