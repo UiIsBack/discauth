@@ -12,7 +12,7 @@ def code_to_token(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, code):
     headers = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
-    r = requests.post(f'%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers)
+    r = requests.post(f'{API_ENDPOINT}/oauth2/token', data=data, headers=headers)
     if "invalid".lower() in r.json():
         return "[error] it seems one of your values are incorrect please double check!"
     else:
