@@ -20,7 +20,7 @@ def get_user_data(token):
     headers = {
         "Authorization" : f"Bearer {token}"
     }
-    r = requests.get(API_ENDPOINT, headers = headers)
+    r = requests.get(f"{API_ENDPOINT}/users/@me", headers = headers)
     return r.json()
 def pull_to_guild(bot_token, token, guild_id, id):
     
