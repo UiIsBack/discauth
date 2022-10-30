@@ -45,8 +45,21 @@ def callback():
   return redirect('/')
   ```
   
-  *Dragging a user to a guild*
-  ```py
-  from discauth import *
+*Dragging a user to a guild*
+```py
+from discauth import *
+config = {
+  "bearer_token" : "YOUR_BEARER_TOKEN", #this is the token you get from the code_to_token function
+  "bot_token" : "YOUR_BOT_TOKEN", #the bot must be in the guild you're dragging to
+  "user_id" : "USER_TO_DRAG_ID",
+  "guild_id" : "GUILD_ID_TO_DRAG_TO"
+} 
+pull = pull_to_guild(bot_token, bearer_token, guild_id, user_id)
+print(pull)
+```
+
+
+
+
+
   
-  cc
