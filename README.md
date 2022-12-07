@@ -2,8 +2,9 @@
 **setup**
 
 *installation*
-```pip install discauth```
-
+`git clone "https://github.com/uiisback/discauth`
+||make sure this is in the same folder as your code you want to write but make
+sure discauth is a separate folder||
 **Basic usage**
 
 *flask login system returns username*
@@ -37,7 +38,7 @@ def callback():
   code = request.args.get('code')
   token = code_to_token(config['client_id'], config['client_secret'], config['redirect'], config['code'])
   session['token'] = str(token)
-  return redirect('http://localhost:5000')
+  return redirect('/')
  
  @app.route('/logout')
  def logout():
