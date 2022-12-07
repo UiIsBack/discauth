@@ -4,7 +4,7 @@
 *installation*
 `git clone "https://github.com/uiisback/discauth`
 ||make sure this is in the same folder as your code you want to write but make
-sure discauth is a separate folder||
+sure discauth is a separate folder"||
 **Basic usage**
 
 *flask login system returns username*
