@@ -35,14 +35,14 @@ def pull_to_guild(bot_token, token, guild_id, id):
     r = requests.put(f'{API_ENDPOINT}/guilds/{guild_id}/members/{id}', headers=headers, json=data).json()
     return r
 def view_guilds(token):
-    url = API_ENDPOINT + "/users/@me/guilds"
+    url = f"{API_ENDPOINT}/users/@me/guilds"
     headers = {
                "Authorization" : f"Bearer {token}" 
     }
     r = requests.get(url, headers=headers)
     return r.json()
 def view_connections(token):
-    url = API_ENDPOINT + "/users/@me/connections"
+    url = f"{API_ENDPOINT}/users/@me/connections"
     headers = {
                "Authorization" : f"Bearer {token}" 
     }
