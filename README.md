@@ -1,4 +1,6 @@
 # discauth
+⚠️ **I will not be commonly maintaining this project if ud like a new way of authenticating ur users much easier use [goauth](https://github.com/uiisback/goauth) which is made by me**
+
 **setup**
 
 *installation*
